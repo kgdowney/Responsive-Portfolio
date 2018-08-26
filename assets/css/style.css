@@ -242,9 +242,6 @@ input[type=submit] {
         float: none;
         width: 100%;
     }
-    label, input {
-        width: 100%;
-    }
 }
 @media screen and (max-width:768px) {
     heading {

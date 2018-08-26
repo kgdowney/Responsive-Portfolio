@@ -1,0 +1,44 @@
+.jumbotron {
+    background-color:#E42D9F;
+    color:#D7DD35;
+    font-family: 'Monoton', cursive;
+}
+.lead {
+    font-family: 'Press Start 2P', cursive;
+    color:#D7DD35;
+}
+#title {
+    font-family: 'Monoton', cursive;
+    font-size: 70px;
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+body {
+    background-image: url("../images/purple.jpg");
+}
+.card {
+    background-color:#D7DD35;
+    margin-bottom:50px;
+}
+#subwrapper {
+    font-family: 'Press Start 2P', cursive;
+
+}
+#start {
+    font-size:30px;
+    background-color:#4ABDAC;
+    margin-bottom:20px;
+    color:white;
+    border: 0;
+}
+#end {
+    font-size:30px;
+    background-color:#4ABDAC;
+    margin-top: 20px;
+    margin-bottom:20px;
+    color:white;
+    border: 0;
+}
+input {
+    margin-left: 15px;
+}

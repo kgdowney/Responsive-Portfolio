@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Here's the Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Press+Start+2P" rel="stylesheet">
+    <title>Sonic the Hedgehog</title>
+</head>
+
+<body>
+    <!--Preloading win and lose sound effects for JS-->
+    <audio id="winSound" src="assets/boom.mp3" preload="auto"></audio>
+    <audio id="lossSound" src="assets/loss.mp3" preload="auto"></audio>
+
+    <nav class="navbar navbar-dark fixed-top bg-white">
+        <img src="assets/images/sonictitle.jpg" class="auth-title" alt="sonic">
+    </nav>
+
+    <div class="container">
+
+        <img src="assets/images/sonic_25th_anniversary_icon_by_nuryrush-da7f26h.png" class="auth-image" alt="sonic">
+        <div class="jumbotron">
+
+            <p align="center">Become Super Sonic by collecting the correct amount of Chaos Emeralds! Becareful though - too much power from
+                the emeralds will cause Sonic to pass out!</p>
+            <!--Play Sonic Music-->
+            <div class="text-center">
+                <button class="btn btn-warning btn-xs theme-button">
+                    <span class="fa fa-music"></span> Play Theme!</button>
+                <button class="btn btn-default btn-xs pause-button">
+                    <span class="fa fa-pause"></span> Pause Song</button>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            <!--Target Score-->
+            <div class="col-lg-3">
+                <div class="card card-default" align="center">
+                    <div class="card-header">
+                        <h2 class="card-title">Target Power Level</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 id="targetScore"></h3>
+                    </div>
+                </div>
+            </div>
+            <!--Your Score-->
+            <div class="col-lg-3">
+                <div class="card card-default" align="center">
+                    <div class="card-header">
+                        <h2 class="card-title">Your Power Level</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 id="yourScore"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Chaos Emeralds-->
+            <div class="col-lg-6">
+                <div class="card card-default" align="center">
+                    <div class="card-header">
+                        <h2 class="card-title">Grab a Chaos Emerald!</h2>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="assets/images/red.jpg" id="red" class="auth-chaos" alt="chaos">
+                        <img src="assets/images/blue.jpg" id="blue" class="auth-chaos" alt="chaos">
+                        <img src="assets/images/green.jpg" id="green" class="auth-chaos" alt="chaos">
+                        <img src="assets/images/gray.jpg" id="gray" class="auth-chaos" alt="chaos">
+                        <img src="assets/images/purple.jpg" id="purple" class="auth-chaos" alt="chaos">
+                        <img src="assets/images/turquoise.jpg" id="turquoise" class="auth-chaos" alt="chaos">
+                        <img src="assets/images/yellow.jpg" id="yellow" class="auth-chaos" alt="chaos">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Counters Row-->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card card-default" align="center">
+                    <div class="card-header">
+                        <h2 class="card-title">Win Count</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 id="winCount"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card card-default" align="center">
+                    <div class="card-header">
+                        <h2 class="card-title">Loss Count</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 id="lossCount"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Link to the JavaScript file down heeyah!-->
+        <script src="assets/javascript/game.js"></script>
+    </div>
+
+    <!--jQuery here-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+
+    <!-- Game Logic -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

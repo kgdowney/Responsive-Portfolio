@@ -1,0 +1,62 @@
+body {
+    background-image: url("../images/soniclevel.png");
+    margin-top:150px;
+}
+
+.auth-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.auth-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+@media (min-width:1200px) {
+    .auth-title {
+        width: 10%;
+    }
+}
+@media (max-width:575px) {
+    .auth-title {
+        width: 50%;
+    }
+}
+.auth-sonic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:25px;
+    width: 100%;
+}
+@media (min-width:1200px) {
+    .auth-image {
+        width: 60%;
+    }
+}
+@media (max-width:575px) {
+    .auth-image {
+        width: 110%;
+    }
+}
+.jumbotron {
+    
+    color:black;
+    /*CDA34F gold*/
+    background-color:white;
+}
+.card-title {
+    font-family: 'Faster One', cursive;
+}
+p {
+    font-family: 'Press Start 2P', cursive;
+}
+h3 {
+    font-family: 'Press Start 2P', cursive;
+}
+.card {
+    margin-bottom: 30px;
+}

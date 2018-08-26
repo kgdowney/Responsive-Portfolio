@@ -1,0 +1,20 @@
+.auth-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.auth-ghost {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:25px;
+    width: 100%;
+}
+.jumbotron{
+    margin-top:auto;
+    padding-top:5px;
+}
+.card {
+    margin:auto;
+}
